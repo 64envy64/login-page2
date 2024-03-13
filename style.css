@@ -51,6 +51,7 @@ body{
     border: 2px solid #59007A;
     filter: brightness(95%);
     box-shadow: 0 10px 15px rgba(133, 133, 133, 0.164);
+    border-radius: 10px;
 }
 
 form h2{
@@ -195,19 +196,6 @@ button:hover{
     font-size: 18px;
     text-align: center;
 }
-.maindesc2 {
-    padding-top: 15px;
-    font-weight: 600;
-    color: #0a0a0a;
-    font-size: 16px;
-    text-align: center;
-}
-.maindesc2 span {
-    color: #f03030;
-}
-a {
-    color:#59007A;
-}
 .digit-group {
     display: flex;
     flex-wrap: wrap;
@@ -218,8 +206,8 @@ a {
 }
 input {
     background-color: #00000018;
-    width: 30px;
-    height: 40px;
+    width: 35px;
+    height: 45px;
     border: none;
     line-height: 50px;
     text-align: center;

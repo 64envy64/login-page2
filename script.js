@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
     $('.digit-group').find('input').each(function() {
         $(this).attr('maxlength', 1);
