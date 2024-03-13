@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Ludiflex | Login</title>
+    <title>Регистрация учеников</title>
 </head>
+
 <body>
-    <div class="box">
-        <div class="container">
-            <div class="top-header">
-                <span>Have an account?</span>
-                <header>Login</header>
-            </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-            <div class="input-field">
-                <input type="text" class="input" placeholder="Username" required>
-                <i class="bx bx-user"></i>
-            </div>
-            <div class="input-field">
-                <input type="password" class="input" placeholder="Password" required>
-                <i class="bx bx-lock-alt"></i>
-            </div>
-            <div class="input-field">
-                <input type="submit" class="submit" value="Login">
-            </div>
+  <div class="container">
+    <iframe src="https://docs.google.com/document/d/160Py7jSEZRBJ9sFv3Fc6gov5E4-GKZuJoIge34wqkGc/" style="width:50%; height:700px;" frameborder="0"></iframe>
+    <form id="mainForm" novalidate>
+        <h2>Договор</h2>
+        <p class="maindesc">Добро пожаловать, пожалуйста ознакомьтесь со следующим договором и введите код из смс</p>
+        <p class="maindesc2">Картинка кликабельна, или нажмите <a href="#"><span>сюда</span></a></p>
+        <div class="prompt">
+          Введите код из смс:
+        </div>
+        
+        <div class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+          <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+          <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+          <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+          <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+        </div>
 
-            <div class="bottom">
-                <div class="left">
-                    <input type="checkbox"  id="check">
-                    <label for="check"> Remember Me</label>
-                </div>
-                <div class="right">
-                    <label><a href="#">Forgot password?</a></label>
-                </div>
-            </div>
+        <button type="submit">Подписать</button>
+    </form>
+</div>
+
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Success!</h2>
+            <p>Ваша форма была успешно отправлена.</p>
         </div>
     </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
