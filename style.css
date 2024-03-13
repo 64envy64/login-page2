@@ -14,7 +14,7 @@ body{
 }
 
 .container {
-    margin: 50px 50px;
+    margin: 50px 15px;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -44,7 +44,7 @@ body{
     flex: 1;
 }
 .container iframe {
-    width: 100%; 
+    margin: 10px;
     height: auto; 
     border: none; 
     overflow: auto; 
@@ -184,6 +184,9 @@ button:hover{
         width: 100%; 
         border-radius: 20px; 
         object-fit: cover; 
+    }
+    .container iframe {
+        width: auto;
     }
 }
 
